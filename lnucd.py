@@ -36,4 +36,8 @@ print("{} calories from carbs".format((carbCalories)))
 print("{} grams of carbs".format(carbCalories / 4))
 print("Total calories to eat {}:".format(caloriesToAllocate))
 
-
+drawSpacing()
+print("Percent from protein:{}%".format(proteinCalories/caloriesToAllocate*100))
+print("Percent from fat:{}%".format(fatCalories/caloriesToAllocate*100))
+print("Percent from carbs:{}%".format(carbCalories/caloriesToAllocate*100))
+drawSpacing()
