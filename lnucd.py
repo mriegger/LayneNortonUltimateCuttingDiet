@@ -28,16 +28,27 @@ drawSpacing()
 fatCalories = caloriesToAllocate * fatPercentOfTotalCalores * 0.01;
 carbCalories = caloriesToAllocate - proteinCalories - fatCalories;
 
-print("{} protein to consume in grams".format(proteinGrams))
-print("{} protein to consume in calories".format(proteinCalories))
-print("{} calories from fat".format(fatCalories))
-print("{} grams of fat".format(fatCalories / 9))
-print("{} calories from carbs".format((carbCalories)))
-print("{} grams of carbs".format(carbCalories / 4))
-print("Total calories to eat {}:".format(caloriesToAllocate))
+
+drawSpacing()
+print("Grams")
+print("------")
+print("{} protein ".format(proteinGrams))
+print("{} fat ".format(fatCalories / 9))
+print("{} carbs ".format(carbCalories / 4))
+
+
+drawSpacing()
+print("Calories")
+print("------")
+print("{} protein ".format(proteinCalories))
+print("{} fat ".format(fatCalories))
+print("{} carbs ".format((carbCalories)))
+
+
 
 drawSpacing()
 print("Percent from protein:{}%".format(proteinCalories/caloriesToAllocate*100))
 print("Percent from fat:{}%".format(fatCalories/caloriesToAllocate*100))
 print("Percent from carbs:{}%".format(carbCalories/caloriesToAllocate*100))
 drawSpacing()
+print("Total calories to eat {}:".format(caloriesToAllocate))
