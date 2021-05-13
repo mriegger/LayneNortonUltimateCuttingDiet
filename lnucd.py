@@ -32,17 +32,17 @@ carbCalories = caloriesToAllocate - proteinCalories - fatCalories;
 drawSpacing()
 print("Grams")
 print("------")
-print("{} protein ".format(proteinGrams))
-print("{} fat ".format(fatCalories / 9))
-print("{} carbs ".format(carbCalories / 4))
+print("{} grams protein ".format(proteinGrams))
+print("{} grams carbs ".format(carbCalories / 4))
+print("{} grams fat ".format(fatCalories / 9))
 
 
 drawSpacing()
 print("Calories")
 print("------")
-print("{} protein ".format(proteinCalories))
-print("{} fat ".format(fatCalories))
-print("{} carbs ".format((carbCalories)))
+print("{} kcal protein ".format(proteinCalories))
+print("{} kcal carbs ".format((carbCalories)))
+print("{} kcal fat ".format(fatCalories))
 
 
 
